@@ -6,7 +6,12 @@ const About = () => {
   return (
     <div className="h-full w-full">
         <div className="container mx-auto h-full py-8 px-5 md:px-2">
-            <nav className="flex justify-between items-center">
+            <motion.nav 
+            variants={fadeIn("up", 0.7)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="flex justify-between items-center">
                 <div>
                     <h1 className="text-[#8cb0d9] text-2xl cursor-pointer">Rhenz</h1>
                 </div>
@@ -18,9 +23,9 @@ const About = () => {
                 </ul>
                 <span className="text-white text-3xl md:hidden cursor-pointer">
                     <HiOutlineBars2/></span>
-            </nav>
+            </motion.nav>
             <motion.div
-             variants={fadeIn("up", 0)}
+             variants={fadeIn("up", 1)}
              initial="hidden"
              whileInView="show"
              viewport={{ once: true }}
