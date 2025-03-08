@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { IoMdArrowDown } from "react-icons/io";
 
 const Home = () => {
-  const [overlay, setOverlay] = useState('bottom-[-50%]');
+  const [overlay, setOverlay] = useState('bottom-[-100%]');
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div className='relative h-screen w-full flex items-center'>
       {/* Overlay */}
-      <div className={`h-1/2 w-full bg-[#1a324c] absolute transition-all duration-500 ${overlay}`}></div>
+      <div className={`h-1/2 w-full bg-[#1a324c] absolute transition-all duration-1000 ${overlay}`}></div>
       
       {/* Hero Content */}
       <div className='relative z-10 w-full px-3 md:px-20'>
@@ -31,7 +31,7 @@ const Home = () => {
         className='flex items-center gap-1 absolute text-[#8cb0d9] bottom-8 left-3 md:left-20 text-[18px] group cursor-pointer'
       >
         <IoMdArrowDown className='group-hover:animate-bounce group-hover:text-[#f7fafc]'/> 
-        <span className='group-hover:text-[#f7fafc]'>scroll</span>
+        <span className='group-hover:text-[#f7fafc] text-[18px]'>scroll</span>
       </button>
     </div>
   );
