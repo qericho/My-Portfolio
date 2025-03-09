@@ -15,11 +15,11 @@ const Home = () => {
   }, []);
 
   return (
-    <div className='relative h-dvh w-full flex items-center'>
+    <div className='relative h-dvh w-full flex items-center '>
       {/* Overlay */}
       <div className={`h-1/2 w-full bg-[#1a324c] absolute transition-all duration-500 ${overlay}`}></div>
       <motion.div 
-      variants={fadeIn("", 1.8)}
+      variants={fadeIn("", 1.7)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
@@ -28,7 +28,7 @@ const Home = () => {
       </motion.div>
       {/* Hero Content */}
       <div 
-        className='relative z-10 w-full px-3 md:px-20'>
+        className='relative top-4 z-10 w-full px-3 md:px-20'>
         <motion.p 
            variants={fadeIn("right", 0)}
            initial="hidden"
@@ -41,15 +41,15 @@ const Home = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-         className='text-4xl md:text-5xl lg:text-6xl text-[#f7fafc] font-[800] my-2'>
-          Self-taught Front End Developer
+         className='text-[35px] md:text-5xl lg:text-6xl text-[#f7fafc] font-[800] my-2'>
+          Front-End Developer
         </motion.h1>
         <motion.p 
           variants={fadeIn("up", 0.4)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className='text-xl md:text-2xl text-[#8cb0d9]'>
+          className='text-xl md:text-2xl text-[#8cb0d9] max-w-[400px] md:max-w-[550px]'>
           I build websites with a focus on responsive design and accessibility.
         </motion.p>
       </div>
@@ -61,7 +61,7 @@ const Home = () => {
         viewport={{ once: true }}
         className='flex items-center gap-1 absolute text-[#8cb0d9] bottom-8 left-3 md:left-20 text-[18px] group cursor-pointer'
       >
-        <IoMdArrowDown className='group-hover:animate-bounce group-hover:text-[#f7fafc]'/> 
+        <IoMdArrowDown className='animate-bounce group-hover:text-[#f7fafc]'/> 
         <span className='group-hover:text-[#f7fafc] text-[18px]'>scroll</span>
       </motion.button>
     </div>
