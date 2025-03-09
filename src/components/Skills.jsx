@@ -7,7 +7,7 @@ const Skills = () => {
          </svg>
          {/* Skills */}
         <div className="container mx-auto md:px-0 px-2">
-          <h2 className="text-2xl md:text-4xl text-[#8cb0d9] font-[800]">My Skills</h2>
+          {/* <h2 className="text-2xl md:text-4xl text-[#8cb0d9] font-[800]">My Skills</h2> */}
         </div>     
     </div>
   )
