@@ -1,7 +1,7 @@
 import Nflix from '../assets/img/nflix.png';
 import Weatherweatherlang from '../assets/img/weatherweatherlang.png';
 import Animepahe from '../assets/img/animepahe.png';
-import Inteo from '../assets/img/Inteo.png';
+import Inteo from '../assets/img/inteo.png';
 import Dezign from '../assets/img/dezign.png';
 import Gmomentum from '../assets/img/gmomentum.png';
 
