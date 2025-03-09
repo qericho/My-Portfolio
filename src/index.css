@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 body{
-  @apply bg-[#0d1926] font-['inter']
+  @apply bg-[#0d1926] font-['inter'] overflow-x-hidden
 }
 /* @layer base{
   :root{

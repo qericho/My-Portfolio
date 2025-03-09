@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import { IoMdArrowDown } from "react-icons/io";
+import Okarun from '../assets/img/okarun2.jpg'
 
 const Home = () => {
-  const [overlay, setOverlay] = useState('bottom-[-100%]');
+  const [overlay, setOverlay] = useState('bottom-[-50%]');
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -14,10 +15,17 @@ const Home = () => {
   }, []);
 
   return (
-    <div className='relative h-screen w-full flex items-center'>
+    <div className='relative h-dvh w-full flex items-center'>
       {/* Overlay */}
-      <div className={`h-1/2 w-full bg-[#1a324c] absolute transition-all duration-800 ${overlay}`}></div>
-      
+      <div className={`h-1/2 w-full bg-[#1a324c] absolute transition-all duration-500 ${overlay}`}></div>
+      <motion.div 
+      variants={fadeIn("", 1.8)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      className='hover:size-80 size-15 duration-500 absolute top-10 right-10 hidden xl:flex '>
+          <img src={Okarun} className='opacity-70 hover:opacity-100 duration-500 rounded-full object-cover' alt="" />
+      </motion.div>
       {/* Hero Content */}
       <div 
         className='relative z-10 w-full px-3 md:px-20'>
@@ -27,7 +35,7 @@ const Home = () => {
            whileInView="show"
            viewport={{ once: true }}
          
-        className='text-xl md:text-2xl text-[#8cb0d9]'>Rhenz Chan</motion.p>
+        className='text-xl md:text-2xl text-[#8cb0d9]'>Okarun</motion.p>
         <motion.h1
           variants={fadeIn("up", 0.2)}
           initial="hidden"

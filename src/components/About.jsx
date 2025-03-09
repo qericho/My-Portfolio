@@ -19,9 +19,9 @@ const About = () => {
             viewport={{ once: true }}
             className="flex justify-between items-center">
                 <div>
-                    <h1 className="text-[#8cb0d9] text-2xl cursor-pointer">Rhenz</h1>
+                    <h1 className="text-[#8cb0d9] text-xl cursor-pointer">Okarun</h1>
                 </div>
-                <ul className="flex-row space-x-5 text-[#f7fafc] text-lg hidden md:flex">
+                <ul className="flex-row space-x-5 text-[#f7fafc] text-sm hidden md:flex uppercase">
                     <li className="cursor-pointer">About</li>
                     <li className="cursor-pointer">Skills</li>
                     <li className="cursor-pointer">Projects</li>
@@ -38,7 +38,7 @@ const About = () => {
              viewport={{ once: true }}
              className="w-[100%] md:w-[80%] mx-auto text-[#cfd8e2] mt-[30px] md:mt-[100px] relative">
                 <MobMenu isOpen={isOpen}/>
-                <h1 className="my-5 md:my-10 text-[#8cb0d9] text-4xl md:text-5xl">Hello, I'm Rhenz Chan 🙂</h1>
+                <h1 className="my-5 md:my-10 text-[#8cb0d9] text-4xl md:text-5xl">Hello, I'm Okarun 🙂</h1>
                 <p className="my-4 text-2xl max-w-[100%] md:max-w-[90%]">A Front End Developer, I believe a well-designed interface can transform how people interact with technology</p>
                 <p className="my-4 text-2xl max-w-[100%] md:max-w-[90%]">I've focused on building a strong foundation by learning HTML, CSS, and JavaScript, while also exploring the power of modern tools like Bootstrap, Tailwind, and ReactJS to bring my ideas to life..</p>
                 <p className="my-4 text-2xl max-w-[100%] md:max-w-[90%]">My goal is to blend creativity with technical precision, ensuring that each website I develop not only looks great but also delivers a seamless, responsive user experience.</p>
