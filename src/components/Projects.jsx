@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 const Projects = () => {
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-full">
       <div className="container mx-auto md:px-0 px-2">
         <div className="w-full h-full my-10">
           <motion.h1
@@ -77,7 +77,7 @@ const Projects = () => {
          initial="hidden"
          whileInView="show"
          viewport={{ once: true }}
-         className='w-full flex items-center justify-center py-10'>
+         className='w-full flex items-center justify-center mt-20'>
           <ViewAllButton title={"View All Projects"} />
         </motion.div>
 
