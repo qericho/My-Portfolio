@@ -3,14 +3,25 @@ import ViewAllButton from "./ViewAllButton";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import MobMenu from "./MobMenu";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 const About = () => {
     const [isOpen, setIsOpen] = useState(false)
     const toggleMenu = () => {
         setIsOpen((open) => !open);
-    }
+    };
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsOpen(false);
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+    
   return (
-    <div className="h-full w-full">
+    <div className="h-full w-full" id="about">
         <div className="container mx-auto h-full py-8 px-5 md:px-2">
             <motion.nav 
             variants={fadeIn("", 0.3)}
@@ -22,10 +33,18 @@ const About = () => {
                     <h1 className="text-[#8cb0d9] text-xl cursor-pointer">Okarun</h1>
                 </div>
                 <ul className="flex-row space-x-5 text-[#f7fafc] text-sm hidden md:flex uppercase">
-                    <li className="cursor-pointer">About</li>
-                    <li className="cursor-pointer">Skills</li>
-                    <li className="cursor-pointer">Projects</li>
-                    <li className="cursor-pointer">Contact</li>
+                    <li className="cursor-pointer">
+                        <Link to="about" smooth={true} duration={800}>About</Link>
+                    </li>
+                    <li className="cursor-pointer">
+                        <Link to="skills" smooth={true} duration={800}>Skills</Link>
+                    </li>
+                    <li className="cursor-pointer">
+                        <Link to="projects" smooth={true} duration={800}>Projects</Link>
+                    </li>
+                    <li className="cursor-pointer">
+                        <Link to="contact" smooth={true} duration={800}>Contact</Link>
+                    </li>
                 </ul>
                 <span onClick={toggleMenu}
                 className="text-white text-3xl md:hidden cursor-pointer">

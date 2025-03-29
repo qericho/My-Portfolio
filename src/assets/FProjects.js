@@ -19,7 +19,7 @@ const FProjects = [
     id: 2,
     title: "Inteo",
     description: "Inteo is a responsive landing page for a furniture shop, featuring stylish designs.",
-    technologies: ["Html", "TailwindS", "Javascript"],
+    technologies: ["Html", "Tailwind", "Javascript"],
     image: Inteo,
     liveDemo: "https://inteo-two.vercel.app/",
     sourceCode: "https://github.com/qericho/Inteo"

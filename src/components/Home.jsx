@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import { IoMdArrowDown } from "react-icons/io";
@@ -15,7 +16,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className='relative h-dvh w-full flex items-center '>
+    <div className='relative h-dvh w-full flex items-center' id='home'>
       {/* Overlay */}
       <div className={`h-1/2 w-full bg-[#1a324c] absolute transition-all duration-500 ${overlay}`}></div>
       <motion.div 
@@ -62,7 +63,9 @@ const Home = () => {
         className='flex items-center gap-1 absolute text-[#8cb0d9] bottom-8 left-3 md:left-20 text-[18px] group cursor-pointer'
       >
         <IoMdArrowDown className='animate-bounce group-hover:text-[#f7fafc]'/> 
-        <span className='group-hover:text-[#f7fafc] text-[18px]'>scroll</span>
+        <span className='group-hover:text-[#f7fafc] text-[18px]'>
+            <Link to="about" smooth={true} duration={500}>scroll</Link>
+          </span>
       </motion.button>
     </div>
   );
