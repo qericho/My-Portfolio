@@ -8,7 +8,7 @@ import Gmomentum from '../assets/img/gmomentum.png';
 const FProjects = [
   {
     id: 1,
-    title: "Animepahe - Clone",
+    title: "Animepahe Ui - Clone",
     description: "An anime streaming site clone with a clean, responsive design.",
     technologies: ["ReactJs", "Tailwind"],
     image: Animepahe,
@@ -53,7 +53,7 @@ const FProjects = [
   },
   {
     id: 6,
-    title: "Netlix - Clone",
+    title: "NetFlix Ui - Clone",
     description: "Nflix is a UI clone of Netflix, showcasing a sleek and responsive design.",
     technologies: ["ReactJs", "Tailwind"],
     image: Nflix,

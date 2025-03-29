@@ -12,11 +12,31 @@ const Footer = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }} className="container mx-auto flex space-x-5 text-xl md:px-0 px-2">
-         <span className="cursor-pointer"><FaGithub/></span>
-         <span className="cursor-pointer"><FaTwitter/></span>
-         <span className="cursor-pointer"><BiLogoGmail/></span>
-         <span className="cursor-pointer"><FaInstagram/></span>
-         <span className="cursor-pointer"><FaLinkedin/></span>
+                <span className="cursor-pointer">
+        <a href="https://github.com/qericho" target="_blank" rel="noopener noreferrer">
+          <FaGithub/>
+        </a>
+        </span>
+        <span className="cursor-pointer">
+        <a href="https://x.com/i/flow/login" target="_blank" rel="noopener noreferrer">
+          <FaTwitter/>
+        </a>
+        </span>
+        <span className="cursor-pointer">
+        <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+          <BiLogoGmail/>
+        </a>
+        </span>
+        <span className="cursor-pointer">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <FaInstagram/>
+        </a>
+        </span>
+        <span className="cursor-pointer">
+        <a href="https://www.linkedin.com/login" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin/>
+        </a>
+        </span>
         </motion.div>
     </div>
   )
