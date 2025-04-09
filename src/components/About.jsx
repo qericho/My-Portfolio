@@ -5,6 +5,7 @@ import { fadeIn } from "../variants";
 import MobMenu from "./MobMenu";
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 const About = () => {
     const [isOpen, setIsOpen] = useState(false)
     const toggleMenu = () => {
@@ -70,7 +71,7 @@ const About = () => {
                   whileInView="show"
                   viewport={{ once: true }}
                  className="w-full text-center mt-15">
-                    <ViewAllButton title={'More About Me'}/>
+                    <RouterLink to="/all-about"><ViewAllButton title={'More About Me'}/></RouterLink>
                 </motion.div>
         </div>
     </div>

@@ -2,6 +2,7 @@ import FProjects from '../assets/FProjects';
 import ViewAllButton from './ViewAllButton';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
+import { Link } from 'react-router-dom';
 const Projects = () => {
   return (
     <div className="w-full h-full" id='projects'>
@@ -78,7 +79,7 @@ const Projects = () => {
          whileInView="show"
          viewport={{ once: true }}
          className='w-full flex items-center justify-center mt-20'>
-          <ViewAllButton title={"View All Projects"} />
+         <Link to="/all-projects"><ViewAllButton title={"View All Projects"}/></Link>
         </motion.div>
 
       </div>
