@@ -79,7 +79,7 @@ const Projects = () => {
          whileInView="show"
          viewport={{ once: true }}
          className='w-full flex items-center justify-center mt-20'>
-         <Link to="/all-projects"><ViewAllButton title={"View All Projects"}/></Link>
+         <Link to=""><ViewAllButton title={"View All Projects"}/></Link>
         </motion.div>
 
       </div>

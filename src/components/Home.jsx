@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import { IoMdArrowDown } from "react-icons/io";
-import Okarun from '../assets/img/okarun2.jpg'
+import Profile from '../assets/img/displaypic.png'
 
 const Home = () => {
   const [overlay, setOverlay] = useState('bottom-[-50%]');
@@ -24,8 +24,8 @@ const Home = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className='hover:size-80 size-15 duration-500 absolute top-10 right-10 hidden xl:flex '>
-          <img src={Okarun} className='opacity-70 hover:opacity-100 duration-500 rounded-full object-cover' alt="" />
+      className='hover:size-60 size-15 duration-500 absolute top-10 right-10 hidden xl:flex '>
+          <img src={Profile} className='opacity-70 hover:opacity-100 duration-500 rounded-full object-cover' alt="" />
       </motion.div>
       {/* Hero Content */}
       <div 
@@ -36,7 +36,7 @@ const Home = () => {
            whileInView="show"
            viewport={{ once: true }}
          
-        className='text-xl md:text-2xl text-[#8cb0d9]'>Okarun</motion.p>
+        className='text-xl md:text-2xl text-[#8cb0d9]'>I'm Echo</motion.p>
         <motion.h1
           variants={fadeIn("up", 0.2)}
           initial="hidden"
