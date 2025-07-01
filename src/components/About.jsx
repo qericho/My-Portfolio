@@ -32,7 +32,7 @@ const About = () => {
             className="flex justify-between items-center">
                 <div>
                     <h1 className="text-[#8cb0d9] text-xl cursor-pointer">
-                        <Link to="home" smooth={true} duration={500}>Okarun</Link>
+                        <Link to="home" smooth={true} duration={500}>Echo</Link>
                     </h1>
                 </div>
                 <ul className="flex-row space-x-5 text-[#f7fafc] text-sm hidden md:flex uppercase">
