@@ -12,7 +12,7 @@ const FProjects = [
     description: "A UI design copied from Upswekla",
     technologies: ["ReactJs", "Tailwind"],
     image: Upskwela,
-    liveDemo: "https://anipahe.vercel.app/",
+    liveDemo: "https://upskwela-ui-clone.vercel.app/",
     sourceCode: "https://github.com/qericho/Animepahe?tab=readme-ov-file"
   },
   {
