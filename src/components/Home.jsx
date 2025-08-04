@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import { IoMdArrowDown } from "react-icons/io";
-import Profile from '../assets/img/displaypic.jpg'
+import Profile from '../assets/img/displaypicnew.jpg'
 
 const Home = () => {
   const [overlay, setOverlay] = useState('bottom-[-50%]');
